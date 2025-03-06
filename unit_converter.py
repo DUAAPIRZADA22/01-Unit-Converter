@@ -10,7 +10,8 @@ def main():
     st.set_page_config(page_title="Unit Converter", page_icon="🔄", layout="centered")
     
     # Styling for both dark and light themes
-    st.markdown("""
+    st.markdown(
+        """
         <style>
             .title {text-align: center; font-size: 36px; font-weight: bold; padding: 10px;}
             .sub-header {text-align: center; font-size: 20px; margin-bottom: 20px;}
@@ -30,7 +31,8 @@ def main():
                 .container {background: rgba(240, 240, 240, 0.7);}
             }
         </style>
-    ", unsafe_allow_html=True)
+        """, unsafe_allow_html=True
+    )
     
     st.markdown("<h1 class='title'>🔄 Unit Converter</h1>", unsafe_allow_html=True)
     st.markdown("<p class='sub-header'>Convert between different units easily!</p>", unsafe_allow_html=True)
